@@ -218,6 +218,84 @@ const InfoIcon = () => (
     />
   </IconWrapper>
 );
+const IconPemasukan = () => (
+  <IconWrapper>
+    <path
+      d="M24.2222 7.5556H10.3333C8.79917 7.5556 7.55551 8.79926 7.55551 10.3334V18.6667C7.55551 20.2009 8.79917 21.4445 10.3333 21.4445H24.2222C25.7563 21.4445 27 20.2009 27 18.6667V10.3334C27 8.79926 25.7563 7.5556 24.2222 7.5556Z"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M21.4445 7.55557V4.77778C21.4445 4.04107 21.1518 3.33453 20.6309 2.81359C20.11 2.29266 19.4034 2 18.6667 2H4.77778C4.04107 2 3.33453 2.29266 2.81359 2.81359C2.29266 3.33453 2 4.04107 2 4.77778V13.1111C2 13.8479 2.29266 14.5544 2.81359 15.0753C3.33453 15.5963 4.04107 15.8889 4.77778 15.8889H7.55557"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M18.8667 12.7501C18.7459 12.5668 18.5704 12.4156 18.3591 12.3129C18.1477 12.2101 17.9083 12.1596 17.6667 12.1667H16.3333C15.9797 12.1667 15.6406 12.2897 15.3905 12.5084C15.1405 12.7272 15 13.024 15 13.3334C15 13.6428 15.1405 13.9396 15.3905 14.1584C15.6406 14.3772 15.9797 14.5001 16.3333 14.5001H17.6667C18.0203 14.5001 18.3594 14.623 18.6095 14.8418C18.8595 15.0606 19 15.3573 19 15.6667C19 15.9762 18.8595 16.2729 18.6095 16.4917C18.3594 16.7105 18.0203 16.8334 17.6667 16.8334H16.3333C16.0917 16.8405 15.8523 16.79 15.6409 16.6872C15.4296 16.5845 15.2541 16.4334 15.1333 16.2501"
+      stroke="white"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M17 16.8333V18M17 11V12.1667V11Z"
+      stroke="white"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </IconWrapper>
+);
+const IconPengeluaran = () => (
+  <IconWrapper>
+    <path
+      d="M18.6667 10.5555H4.77778C3.24366 10.5555 2 11.7992 2 13.3333V21.6666C2 23.2008 3.24366 24.4444 4.77778 24.4444H18.6667C20.2008 24.4444 21.4445 23.2008 21.4445 21.6666V13.3333C21.4445 11.7992 20.2008 10.5555 18.6667 10.5555Z"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M13.3112 15.7499C13.1904 15.5666 13.015 15.4155 12.8036 15.3128C12.5922 15.21 12.3529 15.1595 12.1112 15.1666H10.7779C10.4242 15.1666 10.0851 15.2895 9.83504 15.5083C9.585 15.7271 9.44452 16.0239 9.44452 16.3333C9.44452 16.6427 9.585 16.9394 9.83504 17.1582C10.0851 17.377 10.4242 17.4999 10.7779 17.4999H12.1112C12.4648 17.4999 12.8039 17.6229 13.054 17.8417C13.304 18.0605 13.4445 18.3572 13.4445 18.6666C13.4445 18.976 13.304 19.2728 13.054 19.4916C12.8039 19.7104 12.4648 19.8333 12.1112 19.8333H10.7779C10.5362 19.8404 10.2968 19.7899 10.0855 19.6871C9.87409 19.5844 9.69862 19.4333 9.57785 19.2499"
+      stroke="white"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M11.4445 19.8332V20.9999M11.4445 13.9999V15.1666V13.9999Z"
+      stroke="white"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M11.9618 7.11349L11.9618 1.35957"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M9.44445 3.63724L12.0817 1.00002"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M14.7189 3.63724L12.0817 1.00002"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </IconWrapper>
+);
 
 export const Icon = {
   Dashboard: DashboardIcon,
@@ -229,6 +307,8 @@ export const Icon = {
   Setting: SettingIcon,
   Logout: LogoutIcon,
   Info: InfoIcon,
+  Pemasukan: IconPemasukan,
+  Pengeluaran: IconPengeluaran,
 };
 IconWrapper.propTypes = {
   children: PropTypes.node.isRequired,

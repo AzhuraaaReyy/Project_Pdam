@@ -4,6 +4,9 @@ import CardUang from "../components/fragments/Dashboard/CardUang";
 import CardStatistic from "../components/fragments/Dashboard/CardStatistic";
 import Schedule from "../components/fragments/Dashboard/CardDate";
 import Chart from "../components/fragments/Dashboard/CardHasil";
+import CardPengeluaran from "../components/fragments/Dashboard/CardPengeluaran";
+import CardAktifNonAktif from "../components/fragments/Dashboard/Cardaktif&nonaktif";
+import TagihanPDAM from "../components/fragments/Dashboard/CardTagihan";
 const DashboardPage = () => {
   return (
     <MainLayout type="Dashboard">
@@ -24,14 +27,15 @@ const DashboardPage = () => {
       <div className="md:grid md:grid-cols-4 md:gap-x-6">
         <CardPelanggan />
         <CardUang />
-        <CardPelanggan />
-        <CardPelanggan />
-        <CardStatistic/>
-        <Chart/>
-        <Schedule/>
-        
+        <CardPengeluaran />
+        <CardAktifNonAktif />
+        <CardStatistic />
+        <Chart />
       </div>
-      
+      <div className="md:grid md:grid-cols-2 md:gap-x-6">
+        <Schedule />
+        <TagihanPDAM />
+      </div>
     </MainLayout>
   );
 };

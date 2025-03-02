@@ -6,7 +6,7 @@ const Schedule = () => {
   const [selectedDate, setSelectedDate] = useState(today.getDate());
 
   const formatDate = (date, options = { day: "2-digit", month: "long" }) =>
-    date.toLocaleDateString("en-US", options);
+    date.toLocaleDateString("id-ID", options);
 
   const formattedToday = formatDate(today);
 
@@ -20,8 +20,9 @@ const Schedule = () => {
       const date = new Date(today.getFullYear(), today.getMonth(), i + 1);
       return {
         fullDate: date,
-        day: date.toLocaleDateString("en-US", { weekday: "short" }),
+        day: date.toLocaleDateString("id-ID", { weekday: "short" }),
         date: date.getDate(),
+        year: today.getFullYear(),
       };
     });
   };
@@ -63,7 +64,7 @@ const Schedule = () => {
       desc={
         <div className="p-4">
           <h2 className="text-lg font-semibold mb-4">
-            Hari Ini, {formattedToday}
+            Hari Ini, {formattedToday} {today.getFullYear()}
           </h2>
 
           {/* Tanggal */}
