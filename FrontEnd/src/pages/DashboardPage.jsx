@@ -9,7 +9,7 @@ import CardAktifNonAktif from "../components/fragments/Dashboard/Cardaktif&nonak
 import TagihanPDAM from "../components/fragments/Dashboard/CardTagihan";
 import DaftarPelangganPDAM from "../components/fragments/Dashboard/CardDaftar";
 
-const DashboardPage = () => {
+const Dashboard = () => {
   return (
     <MainLayout type="Dashboard">
       {/* Foto & Nama (Kiri) */}
@@ -48,4 +48,4 @@ const DashboardPage = () => {
     </MainLayout>
   );
 };
-export default DashboardPage;
+export default Dashboard;

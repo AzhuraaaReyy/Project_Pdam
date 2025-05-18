@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignInPage from "./pages/SignIn";
 import SignUpPage from "./pages/SignUp";
-import DashboardPage from "./pages/Dashboard";
+import Dashboard from "./pages/DashboardPage";
 import MenuPelanggan from "./pages/MenuPelanggan";
 const App = () => {
   const myrouter = createBrowserRouter([
@@ -15,7 +15,7 @@ const App = () => {
     },
     {
       path: "/home",
-      element: <DashboardPage />,
+      element: <Dashboard />,
     },
     {
       path: "/pelanggan",
