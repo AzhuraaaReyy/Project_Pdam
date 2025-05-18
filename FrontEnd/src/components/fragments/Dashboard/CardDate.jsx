@@ -59,28 +59,28 @@ const Schedule = () => {
 
   return (
     <Card
-      variant="w-[400px]"
+      variant=""
       title="Jadwal Agenda"
       desc={
         <div className="p-4">
-          <h2 className="text-lg font-semibold mb-4">
+          <h2 className="text-lg font-semibold mb-4 text-white">
             Hari Ini, {formattedToday} {today.getFullYear()}
           </h2>
 
           {/* Tanggal */}
-          <div className="grid grid-cols-7 gap-2 mb-4 p-2 border rounded-lg bg-gray-100">
+          <div className="grid grid-cols-7 gap-2 mb-4 p-4 border rounded-lg bg-gray-100">
             {dates.map((d) => (
               <button
                 key={d.date}
                 className={`flex flex-col items-center px-2 py-1 rounded-lg text-sm transition-all duration-300 w-10 h-14 ${
-                  selectedDate === d.date
-                    ? "bg-black text-white"
-                    : "bg-white border hover:bg-gray-200"
+                  selectedDate === d.date 
+                    ? "bg-blue-500 text-white"
+                    : "bg-white border hover:bg-blue-500 hover:text-white"
                 }`}
                 onClick={() => setSelectedDate(d.date)}
               >
                 <span className="font-medium">{d.date}</span>
-                <span className="text-xs text-gray-600">{d.day}</span>
+                <span className="text-xs text-gray-600 ">{d.day}</span>
               </button>
             ))}
           </div>

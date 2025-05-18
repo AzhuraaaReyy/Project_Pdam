@@ -3,8 +3,8 @@ import Card from "../../elements/card";
 import { PieChart, Pie, Cell } from "recharts";
 
 const data = [
-  { name: "Withdraw Amount", value: 82.3, color: "#FCA5A5" }, // Warna merah muda
-  { name: "Balance Amount", value: 100 - 82.3, color: "#4338CA" }, // Warna biru tua
+  { name: "Withdraw Amount", value: 82.3, color: "#00FF00" }, // Warna merah muda
+  { name: "Balance Amount", value: 100 - 82.3, color: "#FFFF00" }, // Warna biru tua
 ];
 
 const Chart = () => {
@@ -14,7 +14,7 @@ const Chart = () => {
       title="Statistics"
       desc={
         <div>
-          <h2 className="font-bold text-lg mb-2">Chart</h2>
+          <h2 className="font-bold text-lg mb-2 text-white">Chart</h2>
           <div className="flex items-center justify-between mt-6">
             {/* Legend (di samping kiri chart) */}
             <div className="flex flex-col gap-2">
@@ -24,7 +24,7 @@ const Chart = () => {
                     className="w-3 h-3 rounded-full mr-2"
                     style={{ backgroundColor: entry.color }}
                   ></span>
-                  <span className="text-sm text-gray-700 font-medium">
+                  <span className="text-sm text-white font-medium">
                     {entry.name}
                   </span>
                 </div>
@@ -51,7 +51,7 @@ const Chart = () => {
               </PieChart>
 
               {/* Angka di Tengah */}
-              <div className="absolute text-xl font-bold text-gray-900">
+              <div className="absolute text-xl font-bold text-white">
                 82.3%
               </div>
             </div>

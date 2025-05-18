@@ -9,7 +9,7 @@ const CardStatistic = () => {
       title="Statistics"
       desc={
         <div className="h-72">
-          <select className="font-bold text-lg ring-0 focus:outline-none bg-transparent">
+          <select className="font-bold text-lg ring-0 focus:outline-none bg-transparent text-white">
             <option>Weekly Comparison</option>
           </select>
           <BarsDataset desc={expensesStatistics} />

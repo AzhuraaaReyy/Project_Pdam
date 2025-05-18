@@ -47,11 +47,11 @@ const TagihanPDAM = () => {
 
   return (
     <Card
-      variant=""
+      variant="w-full max-h-[300px]"
       title="Total Pemasukan"
       desc={
-        <div className="p-5 bg-white shadow-md rounded-lg max-w-md mx-auto">
-          <h2 className="text-xl font-semibold text-gray-700 mb-3">
+        <div className="">
+          <h2 className="text-xl font-semibold text-white mb-3">
             Tagihan PDAM
           </h2>
 

@@ -23,42 +23,42 @@ const Header = () => {
   const date = new Date().toDateString().slice(4);
   return (
     <header
-      className={`border-b-2 py-4 px-6 flex items-center justify-between bg-gray-500  ${theme.name}`}
+      className={`border-b-2 py-4 px-4 md:px-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between bg-black ${theme.name}`}
     >
       {/* Bagian Kiri: Dashboard */}
-      <div className="flex">
-        <h1 className="text-3xl font-bold">Dashboard</h1>
+      <div className="flex justify-between items-center md:justify-start">
+        <h1 className="text-2xl md:text-3xl font-bold text-white">Dashboard</h1>
       </div>
 
       {/* Bagian Tengah: Search Bar */}
-      <div className="relative w-1/3">
+      <div className="relative w-full md:w-1/3">
         <input
           type="text"
           placeholder="Search"
-          className="w-full border rounded-full px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white shadow-sm"
+          className="w-full border rounded-full px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white shadow-sm text-sm md:text-base"
         />
         <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
       </div>
 
       {/* Bagian Kanan: Profil User */}
-      <div className="flex items-center bg-white py-2 px-6 rounded-[20px] shadow-md w-1/5 justify-between">
-        {/* Foto & Nama (Kiri) */}
-        <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-between bg-blue-500 py-2 px-4 md:px-6 rounded-xl shadow-md w-full md:w-1/4">
+        {/* Foto & Nama */}
+        <div className="flex items-center space-x-2 md:space-x-4">
           <img
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-8 h-8 md:w-12 md:h-12 rounded-full object-cover"
             src="/public/images/profile.png"
             alt="Profile"
           />
-          <div className="flex flex-col">
-            <span className="font-bold text-lg">GUEST</span>
-            <span className="text-gray-500 text-sm">Admin</span>
+          <div className="flex flex-col text-sm md:text-base">
+            <span className="font-bold text-white ">GUEST</span>
+            <span className="text-black text-xs md:text-sm">Admin</span>
           </div>
         </div>
 
-        {/* Notifikasi (Kanan) */}
+        {/* Notifikasi */}
         <div className="relative">
-          <FiBell className="text-gray-500 text-2xl cursor-pointer" />
-          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+          <FiBell className="text-white text-xl md:text-2xl cursor-pointer" />
+          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-4 h-4 md:w-5 md:h-5 flex items-center justify-center rounded-full">
             2
           </span>
         </div>

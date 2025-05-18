@@ -3,8 +3,8 @@ import { Icon } from "../components/elements/icon";
 export const expensesStatistics = {
   dataKey: "date",
   series: [
-    { dataKey: "amountThisWeek", label: "This Week", color: "#E8E8E8" },
-    { dataKey: "amountLastWeek", label: "Last Week", color: "#299D91" },
+    { dataKey: "amountThisWeek", label: "This Week", color: "#00FF00" },
+    { dataKey: "amountLastWeek", label: "Last Week", color: "#FFFF00" },
   ],
   data: [
     {

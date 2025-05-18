@@ -3,7 +3,7 @@ import Navbar from "../fragments/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="flex w-screen min-h-screen">
+    <div className="flex w-screen min-h-screen bg-blue-900">
       {/* Navbar (Sidebar) */}
       <div className="fixed left-0 top-0 h-full w-28 sm:w-72 bg-defaultBlack">
         <Navbar />

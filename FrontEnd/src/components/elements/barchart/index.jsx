@@ -16,10 +16,10 @@ const chartSetting = {
   },
   sx: {
     ["& .MuiChartsAxis-left .MuiChartsAxis-tickLabel"]: {
-      fill: "#9F9F9F",
+      fill: "#FFFFFF",
     },
     ["& .MuiChartsAxis-bottom .MuiChartsAxis-tickLabel"]: {
-      fill: "#9F9F9F",
+      fill: "#FFFFFF",
     },
   },
 };

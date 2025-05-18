@@ -8,7 +8,7 @@ const CardAktifNonAktif = () => {
 
   return (
     <Card
-      variant="w-[300px] "
+      variant=""
       title="Pelanggan Aktif & Non Aktif"
       desc={
         <div className={`${theme.name} p-4 flex flex-col gap-4`}>
@@ -18,7 +18,7 @@ const CardAktifNonAktif = () => {
               <div className="flex items-center justify-center w-12 h-12 bg-green-600 text-white rounded-full">
                 <Icon.Pelanggan />
               </div>
-              <span className="text-gray-700 text-lg font-medium">
+              <span className="text-white text-lg font-medium">
                 Pelanggan Aktif
               </span>
             </div>
@@ -31,7 +31,7 @@ const CardAktifNonAktif = () => {
               <div className="flex items-center justify-center w-12 h-12 bg-red-600 text-white rounded-full">
                 <Icon.Pelanggan />
               </div>
-              <span className="text-gray-700 text-lg font-medium">
+              <span className="text-white text-lg font-medium">
                 Pelanggan Non Aktif
               </span>
             </div>

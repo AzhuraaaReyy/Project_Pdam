@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       id: "Pelanggan",
-      link: "/",
+      link: "/pelanggan",
       icon: <Icon.Pelanggan />,
       label: "Pelanggan",
     },

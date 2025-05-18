@@ -9,7 +9,7 @@ const CardUang = () => {
 
   return (
     <Card
-      variant="w-[270px]"
+      variant=""
       title="Total Pemasukan"
       desc={
         <div className={` ${theme.name}`}>
@@ -20,7 +20,7 @@ const CardUang = () => {
             </div>
             {/* Text Section */}
             <div className="flex flex-col text-center flex-1">
-              <span className="text-gray-700 text-lg font-medium pb-2">
+              <span className="text-white text-lg font-medium pb-2">
                 Pemasukan
               </span>
               <span className="text-2xl font-bold text-gray-900">10</span>
