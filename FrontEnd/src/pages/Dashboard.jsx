@@ -8,6 +8,7 @@ import CardPengeluaran from "../components/fragments/Dashboard/CardPengeluaran";
 import CardAktifNonAktif from "../components/fragments/Dashboard/Cardaktif&nonaktif";
 import TagihanPDAM from "../components/fragments/Dashboard/CardTagihan";
 import DaftarPelangganPDAM from "../components/fragments/Dashboard/CardDaftar";
+
 const DashboardPage = () => {
   return (
     <MainLayout type="Dashboard">
