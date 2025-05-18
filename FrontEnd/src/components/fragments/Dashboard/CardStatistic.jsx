@@ -1,6 +1,6 @@
 import { expensesStatistics } from "../../../data/expense";
 import Card from "../../elements/card";
-import BarsDataset from "../../Elements/BarChart";
+import BarsDataset from "../../elements/barchart";
 
 const CardStatistic = () => {
   return (
