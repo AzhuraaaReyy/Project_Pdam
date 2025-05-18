@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import LabeledInput from "../elements/labeledinput";
 import CheckBox from "../elements/checkbox";
 import Button from "../elements/button";
+
 const FormSignIn = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -12,11 +14,14 @@ const FormSignIn = () => {
     mode: "onChange",
   });
 
+  const onSubmit = () => {
+    navigate("/home");
+  };
   const onErrors = (errors) => console.error(errors);
 
   return (
     <div className="mt-16">
-      <form onSubmit={handleSubmit(onErrors)}>
+      <form onSubmit={handleSubmit(onSubmit,onErrors)}>
         <div className="mb-6">
           <LabeledInput
             label="Email address"
