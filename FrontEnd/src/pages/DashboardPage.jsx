@@ -12,11 +12,10 @@ import DaftarPelangganPDAM from "../components/fragments/Dashboard/CardDaftar";
 const Dashboard = () => {
   return (
     <MainLayout type="Dashboard">
-      {/* Foto & Nama (Kiri) */}
-      <div className="flex items-center space-x-4 pt-5 pl-1">
+      <div className="flex flex-wrap items-center gap-2 pt-5 px-4">
         <img
-          className="w-12 h-12 rounded-full object-cover"
-          src="/public/images/profile.png"
+          className="w-12 h-12 rounded-full object-cover border border-white"
+          src="/images/profile.png"
           alt="Profile"
         />
         <div className="flex flex-col">
@@ -25,8 +24,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="pb-10"></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+      <div className="py-5 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <CardPelanggan />
         <CardUang />
         <CardPengeluaran />
@@ -34,14 +32,12 @@ const Dashboard = () => {
         <CardStatistic />
         <Chart />
       </div>
-      <div className="pb-5"></div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-6">
-        <div className="col-span-1">
-          <Schedule />
-        </div>
-        <div className="col-span-1">
+
+      <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-6 pb-10">
+        <Schedule />
+        <div>
           <TagihanPDAM />
-          <div className="pb-5"></div>
+          <div className="pt-5"></div>
           <DaftarPelangganPDAM />
         </div>
       </div>
