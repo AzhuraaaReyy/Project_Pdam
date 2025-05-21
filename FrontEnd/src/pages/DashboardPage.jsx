@@ -12,33 +12,33 @@ import DaftarPelangganPDAM from "../components/fragments/Dashboard/CardDaftar";
 const Dashboard = () => {
   return (
     <MainLayout type="Dashboard">
-      {/* Header kecil */}
-      <div className="flex items-center space-x-4 pt-4 pb-2">
+      {/* Foto & Nama (Kiri) */}
+      <div className="flex items-center space-x-4 pt-5 pl-1">
         <img
           className="w-12 h-12 rounded-full object-cover"
           src="/images/profile.png"
           alt="Profile"
         />
-        <div>
-          <span className="font-bold text-lg sm:text-xl text-white">
-            Hallo, GUEST
-          </span>
-          <div className="text-white text-sm">Admin</div>
+        <div className="flex flex-col">
+          <span className="font-bold text-[20px] text-white">Hallo, GUEST</span>
+          <span className="text-white text-sm">Admin</span>
         </div>
       </div>
 
-      {/* Kartu statistik */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-4">
+      {/* Responsive grid layout */}
+      <div className="mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <CardPelanggan />
         <CardUang />
         <CardPengeluaran />
         <CardAktifNonAktif />
+      </div>
+
+      <div className="mt-6 grid gap-4 grid-cols-1 lg:grid-cols-2">
         <CardStatistic />
         <Chart />
       </div>
 
-      {/* Jadwal dan daftar */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="mt-6 grid gap-4 grid-cols-1 md:grid-cols-2">
         <Schedule />
         <div>
           <TagihanPDAM />
