@@ -5,12 +5,11 @@ const MainLayout = ({ children }) => {
   return (
     <div className="flex w-screen min-h-screen max-w-full bg-blue-900">
       {/* Navbar (Sidebar) */}
-      <div className="fixed left-0 top-0 h-full  sm:w-72 bg-defaultBlack">
-        <Navbar />
-      </div>
+
+      <Navbar />
 
       {/* Bagian Kanan: Header + Content */}
-      <div className="flex-1 ml-28 sm:ml-72">
+      <div className="w-screen">
         {/* Header */}
         <Header />
 
