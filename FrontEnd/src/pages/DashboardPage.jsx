@@ -23,24 +23,6 @@ const Dashboard = () => {
           <span className="text-white text-sm">Admin</span>
         </div>
       </div>
-
-      <div className="py-5 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <CardPelanggan />
-        <CardUang />
-        <CardPengeluaran />
-        <CardAktifNonAktif />
-        <CardStatistic />
-        <Chart />
-      </div>
-
-      <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-6 pb-10">
-        <Schedule />
-        <div>
-          <TagihanPDAM />
-          <div className="pt-5"></div>
-          <DaftarPelangganPDAM />
-        </div>
-      </div>
     </MainLayout>
   );
 };
