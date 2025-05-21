@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Card from "../../elements/card";
 import { Icon } from "../../elements/icon";
 import { useContext } from "react";
@@ -28,7 +27,6 @@ const CardPelanggan = () => {
           </div>
         </div>
       }
-      width="300px"
     />
   );
 };
