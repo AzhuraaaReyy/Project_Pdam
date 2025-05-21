@@ -26,7 +26,7 @@ const Dashboard = () => {
       </div>
 
       <div className="pb-10"></div>
-      <div className="grid  lg:grid-cols-4 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         <CardPelanggan />
         <CardUang />
         <CardPengeluaran />
