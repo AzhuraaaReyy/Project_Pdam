@@ -25,11 +25,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Spasi bawah */}
       <div className="pb-10"></div>
-
-      {/* Kartu atas */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         <CardPelanggan />
         <CardUang />
         <CardPengeluaran />
@@ -37,23 +34,18 @@ const Dashboard = () => {
         <CardStatistic />
         <Chart />
       </div>
-
-      {/* Spasi bawah */}
       <div className="pb-5"></div>
-
-      {/* Kartu bawah */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
+      <div className="md:grid md:grid-cols-2 md:gap-x-6">
+        <div className="col-span-1">
           <Schedule />
         </div>
-        <div>
+        <div className="col-span-1">
           <TagihanPDAM />
-          <div className="py-3" />
+          <div className="pb-5"></div>
           <DaftarPelangganPDAM />
         </div>
       </div>
     </MainLayout>
   );
 };
-
 export default Dashboard;
