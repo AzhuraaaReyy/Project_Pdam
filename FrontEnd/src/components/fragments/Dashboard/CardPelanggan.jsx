@@ -28,7 +28,7 @@ const CardPelanggan = () => {
           </div>
         </div>
       }
-     
+      width="300px"
     />
   );
 };

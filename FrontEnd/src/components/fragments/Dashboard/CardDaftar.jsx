@@ -21,7 +21,7 @@ const DaftarPelangganPDAM = () => {
 
   return (
     <Card
-      variant=""
+      variant="w-full"
       title="Daftar Pelanggan"
       desc={
         <div className="overflow-y-auto max-h-[400px] mt-2">

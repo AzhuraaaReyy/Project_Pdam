@@ -26,19 +26,23 @@ const Dashboard = () => {
       </div>
 
       <div className="pb-10"></div>
-      <div className="md:grid md:grid-cols-3 md:gap-x-6">
-       
-       
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+        <CardPelanggan />
+        <CardUang />
+        <CardPengeluaran />
+        <CardAktifNonAktif />
+        <CardStatistic />
+        <Chart />
       </div>
       <div className="pb-5"></div>
       <div className="md:grid md:grid-cols-2 md:gap-x-6">
         <div className="col-span-1">
-          
+          <Schedule />
         </div>
         <div className="col-span-1">
-         
+          <TagihanPDAM />
           <div className="pb-5"></div>
-        
+          <DaftarPelangganPDAM />
         </div>
       </div>
     </MainLayout>

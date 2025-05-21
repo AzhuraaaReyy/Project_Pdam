@@ -1,4 +1,4 @@
-
+import React from "react";
 import Card from "../../elements/card";
 import { PieChart, Pie, Cell } from "recharts";
 
