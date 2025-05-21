@@ -12,7 +12,7 @@ import DaftarPelangganPDAM from "../components/fragments/Dashboard/CardDaftar";
 const Dashboard = () => {
   return (
     <MainLayout type="Dashboard">
-      {/* Foto & Nama (Header Kecil) */}
+      {/* Foto & Nama */}
       <div className="flex items-center space-x-4 pt-5 pl-2 sm:pl-4">
         <img
           className="w-12 h-12 rounded-full object-cover"
@@ -39,9 +39,7 @@ const Dashboard = () => {
 
       {/* Jadwal & Daftar Pelanggan */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <Schedule />
-        </div>
+        <Schedule />
         <div>
           <TagihanPDAM />
           <div className="mt-4">
