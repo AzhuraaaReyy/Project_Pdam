@@ -12,23 +12,21 @@ import DaftarPelangganPDAM from "../components/fragments/Dashboard/CardDaftar";
 const Dashboard = () => {
   return (
     <MainLayout type="Dashboard">
-      {/* Foto & Nama */}
-      <div className="flex items-center space-x-4 pt-5 pl-2 sm:pl-4">
+      {/* Foto & Nama (Kiri) */}
+      <div className="flex items-center space-x-4 pt-5 pl-1">
         <img
           className="w-12 h-12 rounded-full object-cover"
-          src="/images/profile.png"
+          src="/public/images/profile.png"
           alt="Profile"
         />
         <div className="flex flex-col">
-          <span className="font-bold text-lg sm:text-xl text-white">
-            Hallo, GUEST
-          </span>
+          <span className="font-bold text-[20px] text-white">Hallo, GUEST</span>
           <span className="text-white text-sm">Admin</span>
         </div>
       </div>
 
-      {/* Kartu Info */}
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="pb-10"></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         <CardPelanggan />
         <CardUang />
         <CardPengeluaran />
@@ -36,19 +34,18 @@ const Dashboard = () => {
         <CardStatistic />
         <Chart />
       </div>
-
-      {/* Jadwal & Daftar Pelanggan */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Schedule />
-        <div>
+      <div className="pb-5"></div>
+      <div className="md:grid md:grid-cols-2 md:gap-x-6">
+        <div className="col-span-1">
+          <Schedule />
+        </div>
+        <div className="col-span-1">
           <TagihanPDAM />
-          <div className="mt-4">
-            <DaftarPelangganPDAM />
-          </div>
+          <div className="pb-5"></div>
+          <DaftarPelangganPDAM />
         </div>
       </div>
     </MainLayout>
   );
 };
-
 export default Dashboard;

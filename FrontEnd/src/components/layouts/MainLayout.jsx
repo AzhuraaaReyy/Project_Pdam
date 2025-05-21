@@ -3,18 +3,19 @@ import Navbar from "../fragments/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="flex min-h-screen bg-blue-900 overflow-x-hidden">
+    <div className="flex w-screen min-h-screen bg-blue-900">
       {/* Navbar (Sidebar) */}
-      <div className=" fixed left-0 top-0 h-full w-28 sm:w-72 bg-defaultBlack z-50">
+      <div className="fixed left-0 top-0 h-full w-28 sm:w-72 bg-defaultBlack">
         <Navbar />
       </div>
 
       {/* Bagian Kanan: Header + Content */}
-      <div className="flex-1 sm:ml-72 ml-28">
+      <div className="flex-1 ml-28 sm:ml-72">
+        {/* Header */}
         <Header />
-        <main className="px-4 sm:px-6 py-4 min-h-[calc(100vh-4rem)]">
-          {children}
-        </main>
+
+        {/* Content */}
+        <main className="px-6 py-4 min-h-[calc(100vh-4rem)]">{children}</main>
       </div>
     </div>
   );

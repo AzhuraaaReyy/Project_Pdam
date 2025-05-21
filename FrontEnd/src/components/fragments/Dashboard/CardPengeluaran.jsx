@@ -28,7 +28,7 @@ const CardPengeluaran = () => {
           </div>
         </div>
       }
-      width="300px"
+   
     />
   );
 };
